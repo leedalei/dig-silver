@@ -1,19 +1,20 @@
 <template>
-  <div>干你娘啦 ，鸡掰</div>
+  <div>干你娘啦 ，鸡掰啦</div>
 </template>
 
 <script>
 export default {
+  name: "asdfal",
   components: {},
   props: {},
   data() {
-    return {}
+    return {};
   },
   computed: {},
   watch: {},
   mounted() {},
-  methods: {},
-}
+  methods: {}
+};
 </script>
 
 <style scoped lang="scss"></style>

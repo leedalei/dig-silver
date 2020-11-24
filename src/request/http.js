@@ -1,33 +1,33 @@
-import axios from 'axios'
-import Vue from 'vue'
+import axios from "axios";
+import Vue from "vue";
 // 请求超时时间
-axios.defaults.timeout = 10000
+axios.defaults.timeout = 10000;
 // 响应拦截器
 axios.interceptors.response.use(
-  response => {
+  (response) => {
     // 如果返回的状态码为200，说明接口请求成功，可以正常拿到数据
     // 否则的话抛出错误
     if (response.data.success === true) {
-      return Promise.resolve(response)
+      return Promise.resolve(response);
     } else {
-      Vue.prototype.$message.error(response.data.msg)
-      return Promise.reject(response)
+      Vue.prototype.$message.error(response.data.msg);
+      return Promise.reject(response);
     }
   },
   // 服务器状态码不是2开头的的情况
   // 这里可以跟你们的后台开发人员协商好统一的错误状态码
   // 然后根据返回的状态码进行一些操作，例如登录过期提示，错误提示等等
   // 下面列举几个常见的操作，其他需求可自行扩展
-  error => {
-    Vue.prototype.$message.error(error.msg)
-    return Promise.reject(error)
+  (error) => {
+    Vue.prototype.$message.error(error.msg);
+    return Promise.reject(error);
   }
-)
+);
 
 /**
-  * 跳转登录页
-  * 携带当前页面路由，以期在登录页面完成登录后返回当前页面
-  */
+ * 跳转登录页
+ * 携带当前页面路由，以期在登录页面完成登录后返回当前页面
+ */
 // const toLogin = () => {
 //   router.replace({
 //     path: '/login',
@@ -38,9 +38,9 @@ axios.interceptors.response.use(
 // }
 
 /**
-  * 请求失败后的错误统一处理
-  * @param {Number} status 请求失败的状态码
-  */
+ * 请求失败后的错误统一处理
+ * @param {Number} status 请求失败的状态码
+ */
 // const errorHandle = (status, other) => {
 //   // 状态码判断
 //   switch (status) {
@@ -68,36 +68,38 @@ axios.interceptors.response.use(
 // }
 
 /**
-  * get方法，对应get请求
-  * @param {String} url [请求的url地址]
-  * @param {Object} params [请求时携带的参数]
-  */
-export function get (url, params) {
+ * get方法，对应get请求
+ * @param {String} url [请求的url地址]
+ * @param {Object} params [请求时携带的参数]
+ */
+export function get(url, params) {
   return new Promise((resolve, reject) => {
-    axios.get(url, {
-      params
-    })
-      .then(res => {
-        resolve(res.data)
+    axios
+      .get(url, {
+        params
       })
-      .catch(err => {
-        reject(err.data)
+      .then((res) => {
+        resolve(res.data);
       })
-  })
+      .catch((err) => {
+        reject(err.data);
+      });
+  });
 }
 /**
-* post方法，对应post请求
-* @param {String} url [请求的url地址]
-* @param {Object} params [请求时携带的参数]
-*/
-export function post (url, params) {
+ * post方法，对应post请求
+ * @param {String} url [请求的url地址]
+ * @param {Object} params [请求时携带的参数]
+ */
+export function post(url, params) {
   return new Promise((resolve, reject) => {
-    axios.post(url, params)
-      .then(res => {
-        resolve(res.data)
+    axios
+      .post(url, params)
+      .then((res) => {
+        resolve(res.data);
       })
-      .catch(err => {
-        reject(err.data)
-      })
-  })
+      .catch((err) => {
+        reject(err.data);
+      });
+  });
 }

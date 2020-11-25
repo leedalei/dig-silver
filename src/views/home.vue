@@ -8,13 +8,13 @@ export default {
   components: {},
   props: {},
   data() {
-    return {};
+    return {}
   },
   computed: {},
   watch: {},
   mounted() {},
-  methods: {}
-};
+  methods: {},
+}
 </script>
 
 <style scoped lang="scss"></style>

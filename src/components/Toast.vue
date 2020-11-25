@@ -18,15 +18,15 @@ export default {
     return {
       isShow: false,
       tips: "",
-      type: "info"
-    };
+      type: "info",
+    }
   },
   computed: {},
   watch: {},
   created() {},
   mounted() {},
-  methods: {}
-};
+  methods: {},
+}
 </script>
 
 <style scoped lang="scss">

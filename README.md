@@ -1,3 +1,3 @@
-# dig-silver
+# GoFrame Project
 
-史诗巨著，掘银论坛
+https://goframe.org

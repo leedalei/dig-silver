@@ -1,10 +1,15 @@
-module gf-app
+module singo
+
+go 1.12
 
 require (
-	github.com/gogf/gf v1.14.5
-	github.com/gogf/gf-demos v0.0.0-20201121061610-7fbc5c67f07a
-	github.com/gogf/gf-jwt v1.1.0
-	github.com/gogf/swagger v1.2.0
+	github.com/gin-contrib/cors v1.3.0
+	github.com/gin-contrib/sessions v0.0.0-20190512062852-3cb4c4f2d615
+	github.com/gin-gonic/gin v1.4.0
+	github.com/go-redis/redis v6.15.3+incompatible
+	github.com/jinzhu/gorm v1.9.10
+	github.com/joho/godotenv v1.3.0
+	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
+	gopkg.in/go-playground/validator.v8 v8.18.2
+	gopkg.in/yaml.v2 v2.2.2
 )
-
-go 1.11

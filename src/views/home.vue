@@ -1,5 +1,5 @@
 <template>
-  <div>干你娘啦 ，鸡掰啦</div>
+  <div class="text-center">干你娘啦 ，鸡掰啦</div>
 </template>
 
 <script>
@@ -17,4 +17,9 @@ export default {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+div {
+  color: var(--color);
+  background-color: var(--navFontColor);
+}
+</style>

@@ -1,0 +1,10 @@
+.light {
+  --navFontColor: #333333;
+  --color: red;
+  --background: #fffff;
+}
+.dark {
+  --navFontColor: theme("colors.red.500");
+  --color: #0098fe;
+  --background: #33333;
+}

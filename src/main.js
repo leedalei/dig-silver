@@ -7,6 +7,10 @@ import Toast from "@/assets/js/toast"
 // import VueClipboard from 'vue-clipboard2'
 // import Highlight from 'vue-markdown-highlight'
 // import 'highlight.js/scss/monokai-sublime.scss'
+//引入tailwind配置
+import "@/assets/css/tailwind.css"
+// 引入主题文件
+import "@/assets/css/theme.css"
 
 // Vue.use(Highlight)
 // Vue.use(VueClipboard)

@@ -4,12 +4,17 @@
       改变主题
     </button>
     <router-view />
-    <button class="fixed right-0 bottom-0 px-12 py-4 border-solid border-2 border-blue-400 rounded-full outline-none" @click="backTop">回到顶部</button>
+    <button
+      class="fixed right-0 bottom-0 px-12 py-4 border-solid border-2 border-blue-400 rounded-full outline-none"
+      @click="backTop"
+    >
+      回到顶部
+    </button>
   </div>
 </template>
 
 <script>
-import { scrollTo } from './common/utils'
+import { scrollTo } from "./common/utils"
 
 export default {
   name: "App",
@@ -34,13 +39,14 @@ export default {
     backTop() {
       const e = document.documentElement || document.body
       scrollTo(e)
-    }
+    },
   },
 }
 </script>
 
 <style scoped lang="scss">
-  #app {
-    height: 1000px;
-  }
+#app {
+  height: 1000px;
+  @apply text-center;
+}
 </style>

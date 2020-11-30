@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "eslint --fix --ext .js,.vue src"
+    "lint": "eslint --fix --ext .js,.vue src",
+    "merge": "node ./bin/mergeToDev.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -42,6 +43,7 @@
     "prettier-eslint-cli": "^5.0.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "shelljs": "^0.8.4",
     "svg-sprite-loader": "^5.0.0",
     "svgo": "^1.3.2",
     "svgo-loader": "^2.2.1",

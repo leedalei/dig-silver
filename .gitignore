@@ -1,5 +1,6 @@
 node_modules
 dist
+yarn.lock
 .DS_Store
 .env
 go.sum

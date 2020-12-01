@@ -10,15 +10,19 @@
     >
       回到顶部
     </button>
+    <nav-bar />
   </div>
 </template>
 
 <script>
 import { scrollTo } from "./common/utils"
+import NavBar from "./components/NavBar"
 
 export default {
   name: "App",
-  components: {},
+  components: {
+    NavBar,
+  },
   props: {},
   data() {
     return {

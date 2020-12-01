@@ -11,6 +11,8 @@ import Toast from "@/assets/js/toast"
 import "@/assets/css/tailwind.css"
 // 引入主题文件
 import "@/assets/css/theme.css"
+// 引入默认配置文件
+import "@/assets/css/index.scss"
 
 // Vue.use(Highlight)
 // Vue.use(VueClipboard)

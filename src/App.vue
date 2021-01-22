@@ -15,42 +15,22 @@
 </template>
 
 <script>
-import { scrollTo } from "./common/utils"
-import NavBar from "./components/NavBar"
+import { defineComponent } from "vue";
 
-export default {
+export default defineComponent({
   name: "App",
-  components: {
-    NavBar,
-  },
-  props: {},
-  data() {
-    return {
-      theme: "light",
-    }
-  },
-  computed: {},
-  watch: {},
-  mounted() {},
-  methods: {
-    handleChange() {
-      if (this.theme === "light") {
-        this.theme = "dark"
-      } else {
-        this.theme = "light"
-      }
-    },
-    backTop() {
-      const e = document.documentElement || document.body
-      scrollTo(e)
-    },
-  },
-}
+  components: {},
+  setup() {},
+});
 </script>
 
-<style scoped lang="scss">
+<style>
 #app {
-  height: 1000px;
-  @apply text-center;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>

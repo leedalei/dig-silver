@@ -1,7 +1,6 @@
 node_modules
 dist
-yarn.lock
 .DS_Store
-.idea
-.env
 go.sum
+dist-ssr
+*.local

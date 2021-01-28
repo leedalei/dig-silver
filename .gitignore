@@ -1,6 +1,8 @@
 node_modules
 dist
 .DS_Store
+.idea
 go.sum
 dist-ssr
 *.local
+yarn.lock
